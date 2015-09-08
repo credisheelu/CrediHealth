@@ -1,0 +1,91 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+    android:id="@+id/notToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_location"
+        android:iconifiedByDefault="false"
+        android:goIcon="@android:drawable/ic_search_category_default"
+        android:queryHint="Select Location"
+        android:contextClickable="false"
+        android:focusable="false"
+        android:imeOptions="actionDone"
+        android:paddingLeft="0dp"
+        android:baselineAligned="false"
+        android:layout_marginLeft="-12dp"
+        android:background="@drawable/border_layout" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_all"
+        android:iconifiedByDefault="false"
+        android:fadingEdge="horizontal"
+        android:queryHint="Doctor, Hospital, Speciality or Treatment"
+        android:goIcon="@android:drawable/ic_menu_search"
+        android:focusable="false"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="0dp"
+        android:layout_marginLeft="-12dp"
+        android:background="@drawable/border_layout" />
+        <FrameLayout
+            android:id="@+id/container_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:contextClickable="false">
+
+
+        </FrameLayout>
+</LinearLayout>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:name="credihealth.app.com.credihealth.activities.fragment.FragmentDrawer"
+        android:layout_width="@dimen/nav_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

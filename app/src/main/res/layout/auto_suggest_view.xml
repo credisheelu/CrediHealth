@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <!-- A CardView that contains a TextView -->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView"
+            android:breakStrategy="balanced"
+            android:clickable="false"
+            android:contextClickable="true"
+            android:elegantTextHeight="false"
+            android:focusable="false"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            android:background="@drawable/border_layout"
+            android:layout_marginTop="2dp"
+            android:typeface="normal" />
+
+
+
+
+</LinearLayout>

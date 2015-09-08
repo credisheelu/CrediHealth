@@ -1,0 +1,53 @@
+             List<String> stringlist;
+                 Filter filter;
+               /* stringlist=new ArrayList<String>();
+                //listview=(ListView)findViewById(R.id.listView);
+                //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                  //      android.R.layout.simple_list_item_1, android.R.id.text1,
+                   //     stringlist);
+              // stringlist.add("liver");
+                //listview.setAdapter(adapter);
+                //listview.setTextFilterEnabled(true);
+               // filter = adapter.getFilter();
+               */
+/* searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                Log.v("submit-", s);
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                Log.v("submit-change", s);
+                if (s.length() >= 2) {
+                    firstFragment.autoSuggestHealth(s, "New Delhi", "5");
+
+
+                }
+                // stringlist.add("new change"+s);
+                /*if (TextUtils.isEmpty(s)) {
+                    filter.filter(null);
+                } else {
+                    filter.filter(s);
+                }
+
+
+                return true;
+
+            }
+        });*/  /*  searchviewLoc.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                         @Override
+                         public boolean onQueryTextSubmit(String s) {
+                             return false;
+                         }
+
+                         @Override
+                         public boolean onQueryTextChange(String s) {
+                               if(s.length()>=2) {
+                                   firstFragment.autoSuggestLoc(s, "5");
+                               }
+                             return true;
+                         }
+                     });*/
